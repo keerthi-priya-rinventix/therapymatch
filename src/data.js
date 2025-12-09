@@ -136,3 +136,18 @@ export const MOCK_THERAPISTS = [
         insurance: ['BCBS', 'Sliding Scale']
     }
 ];
+
+export const USAGE_DATA = [
+    { month: 'Jan', signups: 120, matches_saved: 40, consults: 20 },
+    { month: 'Feb', signups: 150, matches_saved: 55, consults: 28 },
+    { month: 'Mar', signups: 190, matches_saved: 70, consults: 35 },
+    { month: 'Apr', signups: 220, matches_saved: 95, consults: 48 },
+    { month: 'May', signups: 280, matches_saved: 120, consults: 60 },
+    { month: 'Jun', signups: 350, matches_saved: 150, consults: 75 },
+];
+
+export const KEY_METRICS = {
+    matchesMade: 1240,
+    consultsBooked: 75,
+    userSavedMatches: 4, // Personalized for the logged-in user
+};
