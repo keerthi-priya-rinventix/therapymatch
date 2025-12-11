@@ -7,4 +7,5 @@ export const APP_STATE = {
   WIZARD: 'WIZARD',
   RESULTS: 'RESULTS',
   SAVED_MATCHES: 'SAVED_MATCHES',
+  THERAPIST_ONBOARDING: 'therapist_onboarding',
 };
