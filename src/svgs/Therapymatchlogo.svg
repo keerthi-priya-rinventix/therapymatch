@@ -1,0 +1,19 @@
+<svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 32 32" 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    {/* Left Piece (Patient) - Darker Teal */}
+    <path 
+      d="M16 8C16 5.79086 14.2091 4 12 4H6C4.89543 4 4 4.89543 4 6V12C4 14.2091 5.79086 16 8 16C10.2091 16 12 17.7909 12 20V26C12 27.1046 12.8954 28 14 28H16V8Z" 
+      fill="#0d9488" 
+    />
+    {/* Right Piece (Therapist) - Lighter/Complementary Teal */}
+    <path 
+      d="M16 8V28H18C19.1046 28 20 27.1046 20 26V20C20 17.7909 21.7909 16 24 16C26.2091 16 28 14.2091 28 12V6C28 4.89543 27.1046 4 26 4H20C17.7909 4 16 5.79086 16 8Z" 
+      fill="#5eead4" 
+    />
+  </svg>

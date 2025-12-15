@@ -36,7 +36,7 @@ const AuthForm = ({ isLogin, onAuthSuccess, onSwitch }) => {
   };
 
   return (
-    <div className="animate-in fade-in slide-in-from-top-4 duration-500 max-w-sm mx-auto p-8 bg-white rounded-xl shadow-2xl border border-slate-100">
+    <div className="animate-in fade-in slide-in-from-top-4 duration-500 max-w-lg mx-auto p-8 bg-white rounded-xl shadow-2xl border border-slate-100">
       <SectionTitle 
         title={buttonText}
         subtitle={isLogin ? "Log in to access your profile." : "Create your free account to save your match."}
