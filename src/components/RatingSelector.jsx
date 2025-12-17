@@ -44,7 +44,7 @@ function RatingSelector({ currentRating, onRatingSelect }) {
       {/* Optional: Display a description based on selection */}
       {currentRating && (
         <p className="mt-4 text-sm text-gray-500">
-          You selected: **{currentRating}** (Higher numbers mean higher motivation).
+          You selected: <strong>{currentRating}</strong> (Higher numbers mean higher motivation).
         </p>
       )}
     </div>

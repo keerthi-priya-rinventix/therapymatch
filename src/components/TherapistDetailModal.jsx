@@ -39,7 +39,7 @@ const ContactForm = ({ therapistName, onClose }) => {
                 <Check className="w-16 h-16 text-teal-500 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-slate-800 mb-2">Request Sent Successfully!</h3>
                 <p className="text-slate-600">
-                    A secure message has been sent to **{therapistName}**. They will respond to your preferred contact method shortly.
+                    A secure message has been sent to <strong>{therapistName}</strong>. They will respond to your preferred contact method shortly.
                 </p>
                 <Button onClick={onClose} className="mt-6">Close</Button>
             </div>
@@ -52,7 +52,7 @@ const ContactForm = ({ therapistName, onClose }) => {
                 <MessageSquare size={20} className="text-teal-600"/> Request a Consultation
             </h3>
             <div className="space-y-4">
-                <p className="text-sm text-slate-600">You are requesting a consult with **{therapistName}**.</p>
+                <p className="text-sm text-slate-600">You are requesting a consult with <strong>{therapistName}</strong>.</p>
                 
                 <label className="block">
                     <span className="text-sm font-medium text-slate-700">Preferred Session Date/Time</span>
@@ -129,10 +129,10 @@ export const TherapistDetailModal = ({ therapist, onClose }) => { // Removed onS
 
                             {/* Key Stats */}
                             <div className="grid grid-cols-2 gap-4 text-sm pt-2">
-                                <p><Clock size={16} className="inline mr-2 text-teal-500"/> **Rate:** ${fullDetails.cost}/session</p>
-                                <p><MapPin size={16} className="inline mr-2 text-teal-500"/> **Format:** {fullDetails.practiceLocation.includes('Hybrid') ? 'Hybrid' : 'Virtual'}</p>
-                                <p><Calendar size={16} className="inline mr-2 text-teal-500"/> **Education:** {fullDetails.education.split(',')[0]}</p>
-                                <p><DollarSign size={16} className="inline mr-2 text-teal-500"/> **Insurance:** {fullDetails.insuranceAccepted.length > 2 ? 'Multiple' : fullDetails.insuranceAccepted.join(', ')}</p>
+                                <p><Clock size={16} className="inline mr-2 text-teal-500"/> <strong>Rate:</strong>${fullDetails.cost}/session</p>
+                                <p><MapPin size={16} className="inline mr-2 text-teal-500"/> <strong>Format:</strong> {fullDetails.practiceLocation.includes('Hybrid') ? 'Hybrid' : 'Virtual'}</p>
+                                <p><Calendar size={16} className="inline mr-2 text-teal-500"/> <strong>Education:</strong> {fullDetails.education.split(',')[0]}</p>
+                                <p><DollarSign size={16} className="inline mr-2 text-teal-500"/> <strong>Insurance:</strong> {fullDetails.insuranceAccepted.length > 2 ? 'Multiple' : fullDetails.insuranceAccepted.join(', ')}</p>
                             </div>
                             
                             <h3 className="font-semibold text-lg text-slate-700 pt-2">Specialties</h3>
