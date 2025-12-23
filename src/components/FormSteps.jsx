@@ -7,7 +7,7 @@ import {
 // NOTE: Assuming OPTIONS is imported from a file named 'data.js' one level up
 // In a real application, you would fill the CULTURAL_OPTIONS data 
 // inside the CulturalStep from your main data source if necessary.
-import { OPTIONS } from '../data'; 
+import { OPTIONS } from '../data/data'; 
 // NOTE: Assuming UI components (SectionTitle, SelectionCard) are imported 
 // from a file named 'UI.js' in the current folder
 import { SectionTitle, SelectionCard } from './UI'; 

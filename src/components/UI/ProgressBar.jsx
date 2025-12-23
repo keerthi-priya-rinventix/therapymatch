@@ -1,25 +1,20 @@
-// src/components/UI/ProgressBar.jsx
-
+// File: src/components/UI/ProgressBar.jsx
 import React from 'react';
 
-export const ProgressBar = ({ current, total, className = '' }) => {
-    const width = (current / total) * 100;
-
-    return (
-        <div className={`space-y-2 ${className}`}>
-            <p className="text-sm font-semibold text-teal-600">
-                Step {current} of {total}
-            </p>
-            <div className="w-full bg-slate-200 rounded-full h-2.5">
-                <div 
-                    className="bg-teal-600 h-2.5 rounded-full transition-all duration-500" 
-                    style={{ width: `${width}%` }}
-                    role="progressbar"
-                    aria-valuenow={current}
-                    aria-valuemin="1"
-                    aria-valuemax={total}
-                ></div>
-            </div>
-        </div>
-    );
+export const ProgressBar = ({ current, total }) => {
+  const progress = (current / total) * 100;
+  
+  return (
+    <div className="fixed top-0 left-0 w-full h-1.5 bg-slate-100 z-[60]">
+      <div 
+        className="h-full bg-teal-500 transition-all duration-700 ease-out"
+        style={{ width: `${progress}%` }}
+      />
+      <div className="absolute top-4 left-6 px-3 py-1 bg-white border border-slate-200 rounded-full shadow-sm">
+        <span className="text-[10px] font-black uppercase text-slate-400 tracking-tighter">
+          Step {current} of {total}
+        </span>
+      </div>
+    </div>
+  );
 };

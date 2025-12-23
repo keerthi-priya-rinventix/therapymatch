@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SectionTitle, Button } from './UI';
 import { Heart, CheckCircle, Mail } from 'lucide-react';
-import { MOCK_THERAPISTS } from '../data';
+import { MOCK_THERAPISTS } from '../data/data';
 
 const MOCK_HISTORY = [
     { ...MOCK_THERAPISTS[0], status: 'Contacted', date: '2024-10-01' },

@@ -22,7 +22,7 @@ import { Button } from "./UI/Button";
 
 // Assuming these files exist in your structure
 import { UsageMetricsChart } from "./UsageMetricsChart"; 
-import { KEY_METRICS } from "../data"; 
+import { KEY_METRICS } from "../data/data"; 
 
 // --- Mock State & Data ---
 const userProgress = {

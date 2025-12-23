@@ -1,7 +1,7 @@
 // File: src/components/Dashboard/UsageMetricsChart.jsx
 
 import React from 'react';
-import { USAGE_DATA } from '../data';
+import { USAGE_DATA } from '../data/data';
 import { SectionTitle } from './UI';
 
 
